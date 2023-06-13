@@ -209,7 +209,6 @@ label{
      transform:rotatez(-45deg)
    }
    
-   
    input[type="checkbox"]:checked ~ span:nth-of-type(3){
      
      transform-origin:bottom;
