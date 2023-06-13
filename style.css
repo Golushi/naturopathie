@@ -53,6 +53,7 @@ nav ul li a:hover {
 
 section {
     padding: 40px; /* Ajout d'un espace autour du contenu de la section */
+    height: 100vh;
 }
 #accueil {
     margin-top: 60px; /* Ajoute une marge supérieure pour compenser la hauteur de la barre de navigation */
@@ -267,9 +268,9 @@ label{
   }
   
   section:nth-of-type(odd) {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation: 3s ease-out 0s 1 slideInFromLeft;
   }
   
   section:nth-of-type(even) {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 3s ease-out 0s 1 slideInFromRight;
   }

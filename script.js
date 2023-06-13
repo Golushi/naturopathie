@@ -1,3 +1,5 @@
+AOS.init();
+
 const hamburger = document.querySelector(".hamburger");
 const menuContainer = document.querySelector(".menu-container");
 const navLinks = document.querySelectorAll(".menu li a");
