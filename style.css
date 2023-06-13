@@ -53,8 +53,11 @@ nav ul li a:hover {
 
 section {
     min-height: calc(100vh - 60px); /* Calcule la hauteur en soustrayant la hauteur de la barre de navigation */
-    margin-top: 60px; /* Ajoute une marge supérieure pour compenser la hauteur de la barre de navigation */
     padding: 20px; /* Ajout d'un espace autour du contenu de la section */
+}
+#accueil {
+    margin-top: 60px; /* Ajoute une marge supérieure pour compenser la hauteur de la barre de navigation */
+
 }
 
 /* Sélectionne chaque section impaire */
@@ -132,7 +135,7 @@ section:nth-of-type(even) {
 
 
     body {
-        padding-top: 60px;
+        padding-top: 0px;
     }
 
     .menu {
