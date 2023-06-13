@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site vitrine pour une activité professionnelle de freelance en naturothérapie.">
+    <meta name="keywords" content="naturothérapie, santé, bien-être, freelance">
     <link rel="stylesheet" href="style.css" />
     <title>site vitrine naturothopie</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <body>
+      <header>
+        <div class="nav-container">
+            <nav>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hamburger">
+              <label for="check">
+                <input type="checkbox" id="check"/> 
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+        </div>
+    </header>
+  
+      <main>
+          <section id="accueil">
+              <h1>Bienvenue sur mon site de naturothérapie</h1>
+              <p>blabla <br><br><br>
+              </p>
+          </section>
+  
+          <section id="services">
+              <h2>Mes services</h2>
+              <p>blabla <br><br><br>
+          </section>
+  
+          <section id="a-propos">
+              <h2>À propos de moi</h2>
+              <p>blabla <br><br><br>
+          </section>
+
+          <section id="reservation">
+            <h2>Prenez rendez-vous</h2>
+              <!-- Début de widget en ligne Calendly -->
+              <div class="calendly-inline-widget" data-url="https://calendly.com/rswanted007/reservation" style="min-width:320px;height:700px;"></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+              <!-- Fin de widget en ligne Calendly -->
+          </section>
+  
+          <section id="contact">
+              <h2>Contactez-moi</h2>
+          </section>
+      </main>
+  
+      <footer>
+          <p>© 2023 Votre Nom. Tous droits réservés.</p>
+      </footer>
     <script src="script.js"></script>
   </body>
 </html>
