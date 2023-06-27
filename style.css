@@ -274,6 +274,12 @@ section:nth-of-type(even) {
 .container2 {
   flex-direction: row-reverse;
 }
+.presentation, .imgNaturo, .imgModelage , .imgReflexo {
+  transition: transform 0.3s ease-in-out; /* Animation sur 0.3s */
+}
+.presentation:hover, .imgNaturo:hover, .imgModelage:hover, .imgReflexo:hover {
+  transform: scale(1.1); /* Agrandissement de 10% */
+}
 
 }
 .tarif p {
