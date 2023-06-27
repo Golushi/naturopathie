@@ -1,4 +1,9 @@
 /* Reset some default browser styles */
+@font-face {
+  font-family: "Belleza";
+  src: url(docs/Belleza/Belleza-Regular.ttf); 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;    
+    font-family: "Belleza", sans-serif;
   }
 
   body * {
@@ -26,6 +31,7 @@ h1,
 h2,
 h3 {
   text-align: center;
+  color: #53526D;
 }
 
 header {
@@ -36,12 +42,12 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 60px;
-  background-color: #333;
-  color: #fff;
+  height: 80px;
+  background-color: #ffffff;
+  color: #53526d;
 }
 
 nav ul {
@@ -54,14 +60,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #53526d;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #f7a046;
+  color: #b49336;
 }
+
 
 section {
   padding: 40px; /* Ajout d'un espace autour du contenu de la section */
@@ -73,12 +80,12 @@ section {
 
 /* Sélectionne chaque section impaire */
 section:nth-of-type(odd) {
-  background-color: #f7f7f7; /* Couleur de fond grise claire */
+  background-color: #e0e0e0; /* Couleur de fond gris moyen */
 }
 
 /* Sélectionne chaque section paire */
 section:nth-of-type(even) {
-  background-color: #e0e0e0; /* Couleur de fond gris moyen */
+  background-color: #f7f7f7; /* Couleur de fond grise claire */
 }
 
 /* CSS pour le responsive design et le menu hamburger */
@@ -108,11 +115,13 @@ section:nth-of-type(even) {
 .menu-container {
   display: none;
   position: absolute;
+  float: right;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #ffffff;
   z-index: 10;
+  
 }
 
 .menu-container.show {
@@ -132,8 +141,15 @@ section:nth-of-type(even) {
 }
 
 .menu li a {
-  color: #fff;
+  color: #53526d;
   text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+  .logo {
+    max-width: 250px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -177,7 +193,7 @@ label {
 }
 
 label span {
-  background: #fff;
+  background: #53526d;
   border-radius: 10px;
   height: 7px;
   margin: 7px 0;
@@ -217,8 +233,9 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 #contact-section {
-  font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #e0e0e0;
+  height: auto;
 }
 
 .contact-info {
