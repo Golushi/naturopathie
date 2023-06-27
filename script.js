@@ -19,3 +19,23 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // Get the target element's position
+    const targetPosition = document.querySelector(
+      this.getAttribute("href")
+    ).offsetTop;
+
+    // Define a pixel value to offset from the top of the document.
+    const offset = 80; // Change this value to suit your needs
+
+    // Scroll to the target position minus the offset
+    window.scrollTo({
+      top: targetPosition - offset,
+      behavior: "smooth",
+    });
+  });
+});
