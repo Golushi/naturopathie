@@ -145,7 +145,6 @@ section:nth-of-type(even) {
   text-decoration: none;
 }
 
-
 @media (max-width: 1000px) {
   .logo {
     max-width: 250px;
