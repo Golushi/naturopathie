@@ -1,31 +1,21 @@
-/* Reset some default browser styles */
 @font-face {
   font-family: "Belleza";
   src: url(docs/Belleza/Belleza-Regular.ttf); 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Belleza', sans-serif;
+  
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: "Belleza", sans-serif;
-  }
-
-  body * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+body * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 h1,
 h2,
@@ -33,12 +23,6 @@ h3 {
   text-align: center;
   color: #53526D;
 }
-
-/* header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-} */
 
 nav {
   display: flex;
@@ -72,10 +56,40 @@ nav ul li a:hover {
 
 section {
   padding: 40px; /* Ajout d'un espace autour du contenu de la section */
-  height: 100vh;
 }
+
 #accueil {
   margin-top: 60px; /* Ajoute une marge supérieure pour compenser la hauteur de la barre de navigation */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacement entre l'image et le texte */
+}
+
+p {
+  font-size: 1.1em; /* Taille du texte plus grande pour une meilleure lisibilité */
+  line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+  text-align:center; /* Justifier le texte pour une apparence plus nette */
+}
+
+.presentation {
+  width: 500px;
+  max-height: auto;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 10px; /* Ajout d'un bord arrondi à l'image */
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Ajout d'une ombre portée à l'image pour lui donner du relief */
 }
 
 /* Sélectionne chaque section impaire */
@@ -97,6 +111,19 @@ section:nth-of-type(even) {
   width: 100%;
   z-index: 1000;
 }
+
+/* Style par défaut pour les mobiles */
+.imgNaturo, .imgModelage, .imgReflexo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.naturo, .modelage, .reflexo {
+  width: 100%;
+  text-align: justify;
+}
+
 
 .hamburger {
   position: absolute;
@@ -150,16 +177,33 @@ section:nth-of-type(even) {
     max-width: 250px;
   }
 }
+@media (min-width: 1260px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  
+  .presentation {
+    max-width: 100%; /* Augmentation de la taille de l'image pour les grands écrans */
+    margin-right: 2em;
+  }
+  .textPresentation {
+    max-width: 1260px;
+    margin: auto;
+  }
+}
 
-@media (min-width: 769px) {
+
+@media (min-width: 830px) {
   .menu-container {
     position: static;
     background-color: transparent;
     display: block;
   }
-
-  body {
-    padding-top: 0px;
+  
+  p {
+    max-width: 80%; /* Réduction de la largeur du texte pour équilibrer avec l'image plus grande */
   }
 
   .menu {
@@ -174,7 +218,71 @@ section:nth-of-type(even) {
   .hamburger {
     display: none;
   }
+  
+  /* Première partie: Image à gauche, texte à droite */
+  .imgNaturo {
+   
+    margin-right: 20px;
+    width: 40%;
+  }
+
+  .naturo {
+    max-width: 650px;
+    width: 58%;
+    text-align: center;
+  }
+
+  /* Deuxième partie: Image à droite, texte à gauche */
+  .imgModelage {
+    
+    margin-left: 20px;
+    width: 40%;
+  }
+
+  .modelage {
+    max-width: 650px;
+    width: 58%;
+    text-align: center;
+  }
+
+  /* Troisième partie: Image à gauche, texte à droite */
+  .imgReflexo {
+    
+    margin-right: 20px;
+    width: 40%;
+  }
+
+  .reflexo {
+    text-align: center;
+    width: 56%;
+    max-width: 650px;
+   
+  }
+.container1, .container2, .container3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 20px;
+  align-items: center;
 }
+.container2 {
+  flex-direction: row-reverse;
+}
+
+}
+.tarif p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Pour nettoyer les flottants après chaque paragraphe et image */
+.imgNaturo::after, .imgModelage::after, .imgReflexo::after, 
+.naturo::after, .modelage::after, .reflexo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 footer {
   background-color: #333;
@@ -182,6 +290,11 @@ footer {
   text-align: center;
   padding: 10px 0;
   margin-top: auto;
+}
+
+footer p {
+  margin: 0 auto;
+  text-align: center;
 }
 
 label {
