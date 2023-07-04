@@ -83,6 +83,10 @@ p {
   text-align:center; /* Justifier le texte pour une apparence plus nette */
 }
 
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+
 .presentation {
   width: 500px;
   max-height: auto;
@@ -355,6 +359,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   width: 50%;
   transform: translate(30px, -11px) rotatez(45deg);
 }
+
 
 #contact-section {
   text-align: center;

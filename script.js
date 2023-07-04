@@ -39,3 +39,50 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+// Lire d'avantage
+function readMore() {
+  let dots = document.getElementById("dots");
+  let moreText = document.getElementById("more");
+  let btnText = document.getElementById("readMoreBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Lire plus";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Lire moins";
+    moreText.style.display = "inline";
+  }
+}
+function readMore1() {
+  let dots = document.getElementById("dots1");
+  let moreText = document.getElementById("more1");
+  let btnText = document.getElementById("readMoreBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Lire plus";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Lire moins";
+    moreText.style.display = "inline";
+  }
+}
+function readMore2() {
+  let dots = document.getElementById("dots2");
+  let moreText = document.getElementById("more2");
+  let btnText = document.getElementById("readMoreBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Lire plus";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Lire moins";
+    moreText.style.display = "inline";
+  }
+}
