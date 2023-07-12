@@ -4,7 +4,6 @@
 }
 
 body, html {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,11 +67,9 @@ section.pratique {
   align-items: center;
 }
 
-
 .topImg {
 position:relative;
 top: -20px;
-
 }
 
 .container {
@@ -99,7 +96,6 @@ p {
 #more2 {display: none;}
 #more3 {display: none;}
 
-
 .presentation {
   width: 500px;
   max-height: auto;
@@ -108,7 +104,6 @@ p {
   border-radius: 10px; /* Ajout d'un bord arrondi à l'image */
   box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Ajout d'une ombre portée à l'image pour lui donner du relief */
 }
-
 
 #readMoreBtn, #readMoreBtn1, #readMoreBtn2, #readMoreBtn3 {
   background-color: #71A67F;
@@ -139,7 +134,6 @@ p {
 .tarifContent {
 margin-top: 60px;
 }
-
 
 .imgNaturo, .imgModelage, .imgReflexo {
   object-fit: cover;
@@ -182,7 +176,6 @@ section:nth-of-type(even) {
   padding: 30px;
 }
 
-
 .hamburger {
   position: absolute;
   right: 20px;
@@ -206,7 +199,6 @@ section:nth-of-type(even) {
   width: 100%;
   background-color: #ffffff;
   z-index: 10;
-  
 }
 
 .menu-container.show {
@@ -257,7 +249,6 @@ section:nth-of-type(even) {
   }
 }
 
-
 @media (min-width: 830px) {
   .menu-container {
     position: static;
@@ -284,7 +275,6 @@ section:nth-of-type(even) {
   
   /* Première partie: Image à gauche, texte à droite */
   .imgNaturo {
-   
     margin-right: 20px;
     width: 40%;
   }
@@ -297,7 +287,6 @@ section:nth-of-type(even) {
 
   /* Deuxième partie: Image à droite, texte à gauche */
   .imgModelage {
-    
     margin-left: 20px;
     width: 40%;
   }
@@ -337,8 +326,8 @@ section:nth-of-type(even) {
 .presentation:hover, .imgNaturo:hover, .imgModelage:hover, .imgReflexo:hover {
   transform: scale(1.1); /* Agrandissement de 10% */
 }
-
 }
+
 .tarif p {
   text-align: center;
   margin: 0 auto;
@@ -351,7 +340,6 @@ section:nth-of-type(even) {
   display: table;
   clear: both;
 }
-
 
 footer {
   background-color: #333;
@@ -413,21 +401,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   transform: translate(30px, -11px) rotatez(45deg);
 }
 
-
 #contact-section {
   text-align: center;
   background-color: #e0e0e0;
   height: 700px;
-  
 }
 
 .contact-section {
   background: url(img/cadre3.webp) no-repeat;
   background-size: 500px 700px ;
-  
   background-position: center;
   padding: 40px; /* Ajouter un espace autour du texte */
 }
+
 .contactContent {
   margin-top: 60px;
 }
