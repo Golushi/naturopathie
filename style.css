@@ -54,7 +54,10 @@ nav ul li a:hover {
 }
 
 section {
-  padding: 40px; /* Ajout d'un espace autour du contenu de la section */
+  padding-top: 40px; /* Ajout d'un espace autour du contenu de la section */
+}
+section.pratique {
+  padding-bottom: 40px;
 }
 
 #accueil {
@@ -65,8 +68,17 @@ section {
   align-items: center;
 }
 
+
+.topImg {
+position:relative;
+top: -20px;
+
+}
+
 .container {
   width: 80%;
+  position: relative;
+  top: -100px;
 }
 
 .content {
@@ -131,6 +143,7 @@ margin-top: 60px;
 
 .imgNaturo, .imgModelage, .imgReflexo {
   object-fit: cover;
+  justify-items: center;
   border-radius: 10px; /* Ajout d'un bord arrondi à l'image */
   box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Ajout d'une ombre portée à l'image pour lui donner du relief */
 }
@@ -158,13 +171,15 @@ section:nth-of-type(even) {
 /* Style par défaut pour les mobiles */
 .imgNaturo, .imgModelage, .imgReflexo {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 20px;
   height: auto;
 }
 
 .naturo, .modelage, .reflexo {
   width: 100%;
-  text-align: justify;
+  text-align: center;
+  padding: 30px;
 }
 
 
@@ -218,6 +233,11 @@ section:nth-of-type(even) {
 @media (max-width: 1000px) {
   .logo {
     max-width: 250px;
+  }
+  .container {
+    width: 80%;
+    position: relative;
+    top: -30px;
   }
 }
 @media (min-width: 1260px) {
@@ -397,7 +417,19 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 #contact-section {
   text-align: center;
   background-color: #e0e0e0;
-  height: auto;
+  height: 700px;
+  
+}
+
+.contact-section {
+  background: url(img/cadre3.png) no-repeat;
+  background-size: 500px 700px ;
+  
+  background-position: center;
+  padding: 40px; /* Ajouter un espace autour du texte */
+}
+.contactContent {
+  margin-top: 60px;
 }
 
 .contact-info {
