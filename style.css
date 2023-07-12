@@ -87,6 +87,7 @@ p {
 #more1 {display: none;}
 #more2 {display: none;}
 
+
 .presentation {
   width: 500px;
   max-height: auto;
@@ -95,6 +96,24 @@ p {
   border-radius: 10px; /* Ajout d'un bord arrondi à l'image */
   box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Ajout d'une ombre portée à l'image pour lui donner du relief */
 }
+
+#readMoreBtn, #readMoreBtn1, #readMoreBtn2 {
+  background-color: #71A67F;
+  color: white;
+  font-weight: bold;
+  border-color: white;
+  border-radius: 10px; /* Arrondir les bords */
+  transition: all 0.3s ease; /* Ajouter une transition fluide */
+  padding: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+}
+
+#readMoreBtn:hover,
+#readMoreBtn1:hover,
+#readMoreBtn2:hover {
+  transform: scale(1.2); /* Faire grossir le bouton de 20% */
+}
+
 
 .imgNaturo, .imgModelage, .imgReflexo {
   object-fit: cover;
