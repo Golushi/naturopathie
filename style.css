@@ -114,6 +114,18 @@ p {
   transform: scale(1.2); /* Faire grossir le bouton de 20% */
 }
 
+.tarif {
+  background: url(/img/cadre2.png) no-repeat;
+  background-size: 600px 450px;
+  height: 440px;
+  background-position: center;
+  padding: 40px; /* Ajouter un espace autour du texte */
+}
+
+.tarifContent {
+margin-top: 60px;
+}
+
 
 .imgNaturo, .imgModelage, .imgReflexo {
   object-fit: cover;
