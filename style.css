@@ -129,7 +129,7 @@ p {
 }
 
 .tarif {
-  background: url(img/cadre2.png) no-repeat;
+  background: url(img/cadre2.webp) no-repeat;
   background-size: 600px 450px;
   height: 440px;
   background-position: center;
@@ -422,7 +422,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 .contact-section {
-  background: url(img/cadre3.png) no-repeat;
+  background: url(img/cadre3.webp) no-repeat;
   background-size: 500px 700px ;
   
   background-position: center;
