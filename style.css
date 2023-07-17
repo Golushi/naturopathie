@@ -230,7 +230,7 @@ section:nth-of-type(even) {
 
 @media (max-width: 400px) {
   .tarif {
-    background: url(img/cadre4.png) no-repeat;
+    background: url(img/cadre4.webp) no-repeat;
     background-size: 300px 400px;
     height: 480px;
     background-position: center;
@@ -245,12 +245,15 @@ top: 0px;
 }
 @media (max-width: 359px) {
   .tarif {
-    background: url(img/cadre4.png) no-repeat;
+    background: url(img/cadre4.webp) no-repeat;
     background-size: 300px 420px;
     height: 480px;
-    
     background-position: center;
     padding: 40px; /* Ajouter un espace autour du texte */
+  }
+
+  .logo {
+    width: 200px ;
   }
 
   .tarifContent {
