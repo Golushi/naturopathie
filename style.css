@@ -228,6 +228,38 @@ section:nth-of-type(even) {
   text-decoration: none;
 }
 
+@media (max-width: 400px) {
+  .tarif {
+    background: url(img/cadre4.png) no-repeat;
+    background-size: 300px 400px;
+    height: 480px;
+    background-position: center;
+    padding: 30px; /* Ajouter un espace autour du texte */
+  }
+
+  .tarifContent {
+margin: 40px;
+position: relative;
+top: 0px;
+  }
+}
+@media (max-width: 359px) {
+  .tarif {
+    background: url(img/cadre4.png) no-repeat;
+    background-size: 300px 420px;
+    height: 480px;
+    
+    background-position: center;
+    padding: 40px; /* Ajouter un espace autour du texte */
+  }
+
+  .tarifContent {
+margin: 20px;
+position: relative;
+top: 0px;
+  }
+}
+
 @media (max-width: 1000px) {
   .logo {
     max-width: 250px;
