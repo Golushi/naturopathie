@@ -72,6 +72,12 @@ position:relative;
 top: -20px;
 }
 
+.bottomImg {
+position:absolute;
+bottom: 0;
+left: 0;
+}
+
 .container {
   width: 80%;
   position: relative;
@@ -256,6 +262,13 @@ section:nth-of-type(even) {
     display: block;
   }
   
+  .contact-section {
+    background: url(img/cadre3.webp) no-repeat;
+    background-size: 500px 700px ;
+    background-position: center;
+    padding: 40px; /* Ajouter un espace autour du texte */
+  }
+
   p {
     max-width: 80%; /* Réduction de la largeur du texte pour équilibrer avec l'image plus grande */
   }
@@ -405,13 +418,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   text-align: center;
   background-color: #e0e0e0;
   height: 700px;
-}
-
-.contact-section {
-  background: url(img/cadre3.webp) no-repeat;
-  background-size: 500px 700px ;
-  background-position: center;
-  padding: 40px; /* Ajouter un espace autour du texte */
 }
 
 .contactContent {
