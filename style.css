@@ -252,6 +252,7 @@ top: 0px;
     padding: 40px; /* Ajouter un espace autour du texte */
   }
 
+
   .logo {
     width: 200px ;
   }
@@ -295,13 +296,6 @@ top: 0px;
     position: static;
     background-color: transparent;
     display: block;
-  }
-  
-  .contact-section {
-    background: url(img/cadre3.webp) no-repeat;
-    background-size: 500px 700px ;
-    background-position: center;
-    padding: 40px; /* Ajouter un espace autour du texte */
   }
 
   p {
@@ -387,6 +381,14 @@ top: 0px;
   content: "";
   display: table;
   clear: both;
+}
+
+.contact-section {
+  background: url(img/cadre4.webp) no-repeat;
+  background-size: 350px 550px;
+  height: 480px;
+  background-position: center;
+  padding: 50px; /* Ajouter un espace autour du texte */
 }
 
 footer {
