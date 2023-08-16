@@ -391,6 +391,21 @@ top: 0px;
   padding: 50px; /* Ajouter un espace autour du texte */
 }
 
+.btn {
+  text-decoration: none;
+  font-size:x-large;
+  text-align: center;
+}
+
+.rdvLamballe {
+  text-align: center;
+  margin: auto;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: #333;
   color: #fff;
