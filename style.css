@@ -472,6 +472,10 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   height: 700px;
 }
 
+#reservation {
+  height: 950px;
+}
+
 .contactContent {
   margin-top: 60px;
 }
