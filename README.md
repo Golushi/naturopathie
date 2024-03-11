@@ -1,5 +1,5 @@
 
-Le site du restaurant est disponible en ligne ici : https://golushi.github.io/naturothopie/
+Le site est disponible en ligne ici : https://golushi.github.io/naturothopie/
 
 Technologies utilisées
 
